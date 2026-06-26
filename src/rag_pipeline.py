@@ -40,11 +40,13 @@ class FakeNewsRAG:
         )
 
         response = completion.choices[0].message.content
+        response_lower = response.lower()
         verdict = "Unverified"
-        if "true" in response.lower():
-            verdict = "True"
-        elif "false" in response.lower():
+        # Check negated forms first so "not true" / "isn't false" don't get misread
+        if "not true" in response_lower or "false" in response_lower:
             verdict = "False"
+        elif "true" in response_lower:
+            verdict = "True"
 
         return {
             "verdict": verdict,

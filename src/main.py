@@ -1,4 +1,4 @@
-from rag_pipeline import FakeNewsRAG
+from src.rag_pipeline import FakeNewsRAG
 
 if __name__ == "__main__":
     print("📰 Fake News Detection System (RAG + ChatGPT API)")
