@@ -57,13 +57,10 @@ This opens the app at `http://localhost:5173`. Alternatively, run `python -m src
 
 LIAR's 6 labels aren't equally "fake" — half-true is a much softer judgment than pants-fire. For this project, `true` and `mostly-true` were grouped as **real**, everything else as **fake**. It's a simplification made for a course project, not a claim that half-true and pants-fire deserve identical treatment — a more nuanced version would keep the original 6-way labels or use a severity score.
 
-## Known limitations ⚠️
-
-- **Verdict parsing is keyword-based**, not structured — it scans the LLM's response text for "true"/"false," which is a heuristic, not a guarantee. A more robust version would use structured output (e.g. JSON mode) instead of parsing free text
-- **Binary labels lose nuance** — see above
-- **No deployment** — built and run locally for coursework, not hosted anywhere
-- **No automated tests** — this was a focused course project, not production software
-
 ## Dataset credit 📚
 
 This project uses the LIAR dataset: William Yang Wang, *"Liar, Liar Pants on Fire": A New Benchmark Dataset for Fake News Detection*, ACL 2017. Original sources retain copyright of the data.
+
+## More about this project 🔗
+
+I wrote about the thinking behind this on LinkedIn: [linkedin.com/posts/zainthenpc_rag-explainableai-aiethics](https://www.linkedin.com/posts/zainthenpc_rag-explainableai-aiethics-ugcPost-7409959876484812800-yrzn/)
