@@ -53,7 +53,7 @@ python run_project.py
 
 This opens the app at `http://localhost:5173`. Alternatively, run `python -m src.main` for a terminal-only version.
 
-## Why binarize the labels? 🤔
+## Why binarize the labels? 🤔   
 
 LIAR's 6 labels aren't equally "fake" — half-true is a much softer judgment than pants-fire. For this project, `true` and `mostly-true` were grouped as **real**, everything else as **fake**. It's a simplification made for a course project, not a claim that half-true and pants-fire deserve identical treatment — a more nuanced version would keep the original 6-way labels or use a severity score.
 
